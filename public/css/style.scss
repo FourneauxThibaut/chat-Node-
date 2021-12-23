@@ -430,14 +430,65 @@ main{
                             }
                         }
                     }
-                    
                 }
-                
             }
+
             #chat-app-room{
+                position: relative;
                 width: 80%;
-                height: 100%;
-                background-color: #ffffff70;
+                max-height: 100%;
+                background-color: #ffffff80;
+
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    max-height: 87%;
+                    overflow-y: scroll;
+                    list-style: none;
+
+                    li{
+                        margin: 2vh 0;
+                        padding: 1vh 2vw;
+                        background-color: #b64c44;
+                        font-size: 1.1rem;
+                    }
+                }
+                #form{
+                    position: absolute;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 90%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: 2vh;
+                }
+                input{
+                    width: 92%;
+                    align-self: center;
+                    color: white;
+                    background-color: #00000040;
+                    padding: 3px;
+                    border: 2px solid transparent;
+                    border-radius: 50px;
+                    
+                    &:focus {
+                        outline: 2px solid white;
+                    }
+                }
+                button{
+                    height: 4vh;
+                    background: transparent;
+                    border: none;
+                    svg{
+                        height: 100%;
+
+                        &:hover path{
+                            fill: #d1807a;
+                            transition-duration: 0.5s;
+                        }
+                    }
+                }
             }
         }
     }

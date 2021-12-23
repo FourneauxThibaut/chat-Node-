@@ -13,11 +13,9 @@ const { Server } = require("socket.io")
 const io = new Server(server)
 const mongoose = require("mongoose")
 
-mongoose.connect(`mongodb+srv://${MONGO_USER}:${MONGO_PW}@${MONGO_DB}.zbjgu.mongodb.net/ChatDatabase?retryWrites=true&w=majority`).then(
-  () => { },
-  err => { }
-); 
-
+// const database = `mongodb+srv://${MONGO_USER}:${MONGO_PW}@${MONGO_DB}.zbjgu.mongodb.net/ChatDatabase?retryWrites=true&w=majority`
+// mongodb+srv://MtKuma:<password>@mtkuma.ufwu9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+const database = `mongodb+srv://${MONGO_USER}:${MONGO_PW}@${MONGO_DB}.ufwu9.mongodb.net/ChatDatabase?retryWrites=true&w=majority`
 //      ┌───────────────┐
 //      │  Path access  │
 //      └───────────────┘
@@ -56,3 +54,37 @@ io.on('connection', (socket) => {
 server.listen(3000, () => {
   console.log('listening on *:3000');
 });
+
+const User = require("./models/User")
+
+mongoose.connect(database, {
+    user: MONGO_USER,
+    pass: MONGO_PW,
+    authSource: "admin",
+    useNewUrlParser: true
+  })
+  .then(
+    () => { console.log('Database is connected') })
+  .catch((err) => {
+      console.log(err);
+  });
+
+run()
+// print all users
+async function run() {
+  try{
+    const user = await User.where("email")
+    console.log(user);
+  }catch (e){
+    console.log(e.message);
+  }
+}
+
+// create an user
+async function run() {
+    const user = await User.create({
+      username: "specialname",
+      email: "name@mail.com",
+      password: "pass123"
+    })
+}
