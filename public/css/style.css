@@ -1,0 +1,536 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Righteous&display=swap");
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ffffffd0 #8853436e;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #8853436e;
+  border-radius: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ffffffd0;
+  border-radius: 20px;
+  border: 3px solid #8853436e;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(#eb7f58), color-stop(35%, #ef7b4d), color-stop(65%, #c65037), to(#b64c44));
+  background: linear-gradient(to right, #eb7f58 0%, #ef7b4d 35%, #c65037 65%, #b64c44 100%);
+  background-image: url("https://images.unsplash.com/photo-1640017955477-75b58521007d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2664&q=80"), -webkit-gradient(linear, left top, right top, from(#eb7f58), color-stop(35%, #ef7b4d), color-stop(65%, #c65037), to(#b64c44));
+  background-image: url("https://images.unsplash.com/photo-1640017955477-75b58521007d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2664&q=80"), linear-gradient(to right, #eb7f58 0%, #ef7b4d 35%, #c65037 65%, #b64c44 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  font-family: 'Poppins', sans-serif;
+}
+
+.custom-shape-divider-top-1639990092 {
+  fill: #fff2f2;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1639990092 svg {
+    width: calc(100% + 1.3px);
+    height: 45px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Righteous', cursive;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+main #content {
+  padding-top: 0.1px;
+  position: relative;
+  max-width: 90%;
+  margin: 6vh auto;
+}
+
+main #content #content-logo {
+  fill: white !important;
+  position: absolute;
+  top: -9vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 999;
+}
+
+main #content #content-logo svg {
+  height: 18vh;
+}
+
+main #content #content-logo svg path {
+  fill: white;
+}
+
+main #content #content-form {
+  margin-top: 5vh;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #ffffff33;
+  border: .1vmin solid #ffffff33;
+  border-radius: 3.5vmin;
+  overflow: hidden;
+  -webkit-box-shadow: 0 .5vmin 1vmin #00000066;
+          box-shadow: 0 .5vmin 1vmin #00000066;
+}
+
+main #content #content-form .text {
+  margin-top: -2vh;
+  padding: 4vh 9vw;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+main #content #content-form .text .title {
+  text-align: center;
+}
+
+main #content #content-form .text form .input {
+  margin-top: 2vh;
+}
+
+main #content #content-form .text form .input a {
+  position: relative;
+  color: #fcc073;
+}
+
+main #content #content-form .text form .input a::after {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  content: '';
+  width: 65px;
+  height: 2px;
+  background-color: #fcc073;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+main #content #content-form .text form .input a:hover::after {
+  width: 100%;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+}
+
+main #content #content-form .text form .input input {
+  width: 100%;
+  color: #49342b;
+  padding: 8px;
+  border: 2px solid #b98975;
+  border-radius: 5px;
+}
+
+main #content #content-form .text form .input #password {
+  margin-bottom: 1vh;
+}
+
+main #content #content-form .text form .input input:focus {
+  outline: 2px solid white;
+}
+
+main #content #content-form .text form .input input[type=submit] {
+  margin-top: 3vh;
+  padding: 10px 8px;
+  color: white;
+  background-color: #b64c44;
+  border: 3px solid transparent;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+main #content #content-form .text form .input input[type=submit]:hover {
+  color: #fcc073;
+  background-color: #7c453b;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-filter: opacity(80%);
+          filter: opacity(80%);
+}
+
+main #content .content-form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: -30px;
+  background: url("https://images.unsplash.com/photo-1640017955477-75b58521007d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2664&q=80") no-repeat fixed center/cover;
+  background-position: 50% 0%;
+  -webkit-filter: opacity(45%) blur(3px);
+          filter: opacity(45%) blur(3px);
+  z-index: -1;
+}
+
+main #signup {
+  padding-bottom: 4vh;
+  color: white;
+  text-align: center;
+  word-spacing: 0.2vw;
+}
+
+main #signup a {
+  font-weight: bolder;
+  margin-left: 2.5vw;
+  position: relative;
+  color: #fcc073;
+}
+
+main #signup a::after {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  content: '';
+  width: 36px;
+  height: 2px;
+  background-color: #fcc073;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+main #signup a:hover::after {
+  width: 100%;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+}
+
+@media (min-width: 600px) {
+  #content {
+    max-width: 70% !important;
+  }
+}
+
+@media (min-width: 700px) {
+  #content {
+    max-width: 65% !important;
+  }
+}
+
+@media (min-width: 800px) {
+  #content {
+    max-width: 60% !important;
+  }
+  #content-logo {
+    top: -10vh !important;
+  }
+  #content-logo svg {
+    height: 20vh !important;
+  }
+}
+
+@media (min-width: 1050px) {
+  #content {
+    max-width: 65% !important;
+  }
+  #content-logo {
+    top: -15vh !important;
+  }
+  #content-logo svg {
+    height: 25vh !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  #content {
+    max-width: 50% !important;
+  }
+}
+
+@media (min-width: 1700px) {
+  #content {
+    margin-top: 0.2vh !important;
+    max-width: 45% !important;
+  }
+  #content-logo {
+    top: -15.5vh !important;
+  }
+  #signup {
+    padding-bottom: 5vh !important;
+  }
+  #signup a {
+    margin-left: 1.5vw !important;
+  }
+}
+
+#content-app {
+  padding-top: 0.1px;
+  position: relative;
+  max-width: 90%;
+  margin: 6vh auto;
+}
+
+#content-app #content-logo {
+  margin-top: -1.7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  fill: white !important;
+  position: absolute;
+  top: -26vh !important;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-filter: drop-shadow(0 7px 6px #00000050);
+          filter: drop-shadow(0 7px 6px #00000050);
+  z-index: 999;
+}
+
+#content-app #content-logo h1 {
+  color: white;
+  font-size: 3.4rem;
+}
+
+#content-app #content-logo svg {
+  height: 10.5vh !important;
+}
+
+#content-app #content-logo svg path {
+  fill: white;
+}
+
+#content-app #chat {
+  margin-top: -15vh;
+  position: relative;
+  background: #ffffff33;
+  border: .1vmin solid #ffffff33;
+  border-radius: 3.5vmin;
+  overflow: hidden;
+  -webkit-box-shadow: 0 .5vmin 1vmin #00000066;
+          box-shadow: 0 .5vmin 1vmin #00000066;
+}
+
+#content-app #chat .profile_picture {
+  border-radius: 50%;
+  height: 5.5vh;
+  width: 5.5vh;
+}
+
+#content-app #chat #chat-app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 82vh;
+}
+
+#content-app #chat #chat-app #chat-app-menu {
+  padding: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 25%;
+  height: 100%;
+}
+
+#content-app #chat #chat-app #chat-app-menu .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#content-app #chat #chat-app #chat-app-menu .profile h1 {
+  font-size: 1.8rem;
+  color: white;
+}
+
+#content-app #chat #chat-app #chat-app-menu .profile svg {
+  margin-top: 0.5vh;
+  border: 1px solid white;
+  border-radius: 50%;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+#content-app #chat #chat-app #chat-app-menu .profile svg:hover {
+  background-color: #b64c44;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+#content-app #chat #chat-app #chat-app-menu ::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+#content-app #chat #chat-app #chat-app-menu :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+#content-app #chat #chat-app #chat-app-menu ::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+#content-app #chat #chat-app #chat-app-menu ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+#content-app #chat #chat-app #chat-app-menu input {
+  width: 97%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: white;
+  background-color: #885343b3;
+  padding: 8px;
+  border: 2px solid transparent;
+  border-radius: 50px;
+}
+
+#content-app #chat #chat-app #chat-app-menu input:focus {
+  outline: 2px solid white;
+}
+
+#content-app #chat #chat-app #chat-app-menu #room-list {
+  overflow-y: scroll;
+  margin-top: 3vh;
+}
+
+#content-app #chat #chat-app #chat-app-menu #room-list article a {
+  margin-right: 1vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 15px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+#content-app #chat #chat-app #chat-app-menu #room-list article a:hover, #content-app #chat #chat-app #chat-app-menu #room-list article a:active, #content-app #chat #chat-app #chat-app-menu #room-list article a:focus {
+  background-color: #885343b3;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+#content-app #chat #chat-app #chat-app-menu #room-list article a:hover p, #content-app #chat #chat-app #chat-app-menu #room-list article a:active p, #content-app #chat #chat-app #chat-app-menu #room-list article a:focus p {
+  color: #cacacad2 !important;
+}
+
+#content-app #chat #chat-app #chat-app-menu #room-list article a img {
+  position: absolute;
+  left: 0.8vw;
+}
+
+#content-app #chat #chat-app #chat-app-menu #room-list article a .room-information {
+  margin-left: 1vw;
+  width: 62%;
+  color: white;
+}
+
+#content-app #chat #chat-app #chat-app-menu #room-list article a .room-information div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#content-app #chat #chat-app #chat-app-menu #room-list article a .room-information div p:last-child {
+  margin-left: 0.5vw;
+}
+
+#content-app #chat #chat-app #chat-app-menu #room-list article a .room-information h2 {
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+#content-app #chat #chat-app #chat-app-menu #room-list article a .room-information p {
+  color: #885343;
+  opacity: 75%;
+  margin-top: -1.5vh;
+}
+
+#content-app #chat #chat-app #chat-app-menu #room-list article a svg {
+  position: absolute;
+  right: 1.2vw;
+  margin-top: 0.5vh;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+#content-app #chat #chat-app #chat-app-menu #room-list article a svg:hover {
+  background-color: #b64c44;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+#content-app #chat #chat-app #chat-app-room {
+  width: 80%;
+  height: 100%;
+  background-color: #ffffff70;
+}
+
+#content-app .content-app::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: -30px;
+  background: url("https://images.unsplash.com/photo-1640017955477-75b58521007d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2664&q=80") no-repeat fixed center/cover;
+  background-position: 50% 0%;
+  -webkit-filter: opacity(45%) blur(3px);
+          filter: opacity(45%) blur(3px);
+  z-index: -1;
+}
+/*# sourceMappingURL=style.css.map */
