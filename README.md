@@ -40,10 +40,10 @@ Chat application based on Model View Controller architecture & created with :
     │   ├── messageController.js
     │   └── userController.js
     │   
-    ├── Models/                          # Controller model
+    ├── Models/                          
     │   ├── Message.js
     │   ├── model.js
-    │   ├── Room.js                     # Homepage model
+    │   ├── Room.js                    
     │   └── User.js
     │
     ├── public/                         # Public folder
@@ -64,7 +64,7 @@ Chat application based on Model View Controller architecture & created with :
     │   │   ├── signin.ejs
     │   │   └─── signup.ejs
     │   │     
-    │   ├── users/                      # Errors folder
+    │   ├── users/                      
     │   │   ├── edit.ejs
     │   │   └── index.ejs
     │   │   └── show.ejs
@@ -73,7 +73,7 @@ Chat application based on Model View Controller architecture & created with :
     │
     ├── .env                            # [! Gitignore] 
     ├── .gitignore
-    ├── package-lock.json                   # dependency list
+    ├── package-lock.json               # dependency list
     ├── package.json
     └── README.md                       # --[*Your are here*]--
     .
