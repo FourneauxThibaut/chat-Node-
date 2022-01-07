@@ -81,6 +81,11 @@ Chat application based on Model View Controller architecture & created with :
 ```
 </details> 
 
+## Final
+
+<p align="center">
+  <img width="100%" height="auto" src="./assets/BlablaT-screenshot.png" alt="Sign in">
+</p>
 
 ## Technologies
 &nbsp;
